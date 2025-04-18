@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "start": "npm run compile && node ./dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ladvien/node_backend_template/issues"
   },
@@ -21,7 +21,11 @@
   "type": "module",
   "dependencies": {
     "@apollo/server": "^4.12.0",
-    "graphql": "^16.10.0"
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/mongoose": "^5.11.96",
+    "graphql": "^16.10.0",
+    "jsonwebtoken": "^9.0.2",
+    "moongoose": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
